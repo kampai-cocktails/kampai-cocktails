@@ -20,5 +20,5 @@ export default function DrinksDisplay(props) {
       </div>
     );
   }
-  return <div>no drinks</div>;
+  return <div>no drinks displayed</div>;
 }
