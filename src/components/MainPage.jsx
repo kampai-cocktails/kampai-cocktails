@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import RandomButton from "./RandomButton.jsx";
-import WeatherRecButton from "./WeatherRecButton.jsx";
 import SearchByIngredient from "./SearchByIngredient.jsx";
 import DrinksDisplay from "./DrinksDisplay.jsx";
 
@@ -19,11 +18,6 @@ export default function MainPage() {
       <div className="allButtons">
         <RandomButton
           className="randomButton"
-          drinkResults={drinkResults}
-          setDrinkResults={setDrinkResults}
-        />
-        <WeatherRecButton
-          className="weatherRecButton"
           drinkResults={drinkResults}
           setDrinkResults={setDrinkResults}
         />
