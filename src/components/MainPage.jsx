@@ -2,12 +2,20 @@ import React, { useState } from "react";
 import RandomButton from "./RandomButton.jsx";
 import SearchByIngredient from "./SearchByIngredient.jsx";
 import DrinksDisplay from "./DrinksDisplay.jsx";
+import DrinkModalPortal from "./DrinkModal.jsx";
 
 // import modal later
 
 export default function MainPage() {
   const [ingredient, setIngredient] = useState("");
   const [drinkResults, setDrinkResults] = useState("");
+  const [showModal, setShowModal] = useState(false);
+
+  window.onClick = function() {
+    if (showModal === true){
+      setShowModal(false)
+    }
+  }
 
   // we need to somehow detect when drinkResults changes
   // whenever drinkResults changes and is NOT a string
@@ -32,7 +40,15 @@ export default function MainPage() {
       <DrinksDisplay
         drinkResults={drinkResults}
         setDrinkResults={setDrinkResults}
+        setShowModal={setShowModal}
       />
+      <div
+      // onClick={() => {
+      //   setShowModal(true)
+      // }}
+      >
+        {showModal ? <DrinkModalPortal showModal={showModal} setShowModal={setShowModal} /> : null}
+      </div>
     </>
   );
 }

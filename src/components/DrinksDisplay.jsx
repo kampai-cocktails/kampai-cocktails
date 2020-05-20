@@ -14,6 +14,8 @@ export default function DrinksDisplay(props) {
             src={obj.strDrinkThumb}
             onClick={() => {
               // do something here to display the modal
+
+              props.setShowModal(true)
             }}
           ></img>
         ))}
