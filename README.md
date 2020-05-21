@@ -23,6 +23,7 @@ yarn install
 ## Built With
 
 - [React](https://reactjs.org/)
+- [Rakuten Rapid API](https://english.api.rakuten.net/)
 - [Heroku](https://www.heroku.com/)
 
 ## Contributing

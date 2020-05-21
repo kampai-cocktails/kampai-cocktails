@@ -58,7 +58,7 @@ function DrinkModal(props) {
   return (
     <div className="modal">
       <div className="modal-content">
-        <h3>IM A SEXY MODAL</h3>
+        {/* <h3>IM A SEXY MODAL</h3> */}
         <img
           className="modalImage"
           src={props.fullDrinkInfo.strDrinkThumb}
