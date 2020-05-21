@@ -15,7 +15,7 @@ function checkIngredients(fullDrinkInfo) {
 
   // return newArray;
   return (
-    <div className="ingredientList">
+    <div className="ingredientListContainer">
       Ingredients
       <ul className="ingredientList">
         {newArray.map((ingredient, index) => (

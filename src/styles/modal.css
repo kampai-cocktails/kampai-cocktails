@@ -34,10 +34,14 @@
   background: #b76935;
   padding: 2px;
 }
-
+.ingredientListContainer {
+  background: #b76935;
+  padding: 2px;
+}
 .ingredientList {
   background: #b76935;
   padding: 2px;
+  list-style: none;
 }
 
 /*
