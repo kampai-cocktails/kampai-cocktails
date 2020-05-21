@@ -1,5 +1,25 @@
 .Navbar {
-    background-color: purple;
-    color: rgb(227, 255, 65);
-
+  border-radius: 40px 10px;
+  border: none;
+  background: #f4dbd8;
+  color: #143642;
 }
+
+/*
+COLOR PALETTE
+
+BLACK BEAN (DARK BROWN) #2F1000
+
+MISTY ROSE (WHITE) #F4DBD8
+
+LIVER (DOGS) (ORANGE) #B76935
+
+ONYX (GRAY) #383D3B
+
+COFFEE (LIGHT BROWN) #6F23B
+
+SEAL BROWN (RUST RED) #621B00
+
+GUNMETAL (BLUE) #143642
+
+*/

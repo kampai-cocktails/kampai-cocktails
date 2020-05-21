@@ -6,8 +6,8 @@ import MainPage from "./components/MainPage.jsx";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <MainPage />
+      <Navbar className="navbar" />
+      <MainPage className="mainPage" />
     </div>
   );
 }

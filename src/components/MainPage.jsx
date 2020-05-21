@@ -3,6 +3,7 @@ import RandomButton from "./RandomButton.jsx";
 import SearchByIngredient from "./SearchByIngredient.jsx";
 import DrinksDisplay from "./DrinksDisplay.jsx";
 import DrinkModalPortal from "./DrinkModal.jsx";
+import "../styles/MainPage.css";
 
 // import modal later
 
@@ -10,15 +11,15 @@ export default function MainPage() {
   const [ingredient, setIngredient] = useState("");
   const [drinkResults, setDrinkResults] = useState("");
   const [showModal, setShowModal] = useState(false);
-	const [drinkId, setDrinkId] = useState("");
-	const [fullDrinkInfo, setFullDrinkInfo]= useState("");
+  const [drinkId, setDrinkId] = useState("");
+  const [fullDrinkInfo, setFullDrinkInfo] = useState("");
 
   // we need to somehow detect when drinkResults changes
   // whenever drinkResults changes and is NOT a string
   // update DrinksDisplay
 
   return (
-    <>
+    <div className="MainPage">
       <div className="allButtons">
         <RandomButton
           className="randomButton"
@@ -57,6 +58,6 @@ export default function MainPage() {
           />
         ) : null}
       </div>
-    </>
+    </div>
   );
 }

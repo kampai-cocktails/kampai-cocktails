@@ -1,3 +1,7 @@
+html {
+  background: #2f1000;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +40,22 @@
     transform: rotate(360deg);
   }
 }
+
+/*
+COLOR PALETTE
+
+BLACK BEAN (DARK BROWN) #2F1000
+
+MISTY ROSE (WHITE) #F4DBD8
+
+LIVER (DOGS) (ORANGE) #B76935
+
+ONYX (GRAY) #383D3B
+
+COFFEE (LIGHT BROWN) #6F23B
+
+SEAL BROWN (RUST RED) #621B00
+
+GUNMETAL (BLUE) #143642
+
+*/
