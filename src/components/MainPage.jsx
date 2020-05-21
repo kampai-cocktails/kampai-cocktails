@@ -13,6 +13,7 @@ export default function MainPage() {
   const [showModal, setShowModal] = useState(false);
   const [drinkId, setDrinkId] = useState("");
   const [fullDrinkInfo, setFullDrinkInfo] = useState("");
+  const [youtubeLink, setYoutubeLink] = useState("");
 
   // we need to somehow detect when drinkResults changes
   // whenever drinkResults changes and is NOT a string
@@ -42,6 +43,8 @@ export default function MainPage() {
         setDrinkId={setDrinkId}
         fullDrinkInfo={fullDrinkInfo}
         setFullDrinkInfo={setFullDrinkInfo}
+        youtubeLink={youtubeLink}
+        setYoutubeLink={setYoutubeLink}
       />
       <div
       // onClick={() => {
@@ -55,6 +58,8 @@ export default function MainPage() {
             drinkId={drinkId}
             fullDrinkInfo={fullDrinkInfo}
             setFullDrinkInfo={setFullDrinkInfo}
+            youtubeLink={youtubeLink}
+            setYoutubeLink={setYoutubeLink}
           />
         ) : null}
       </div>

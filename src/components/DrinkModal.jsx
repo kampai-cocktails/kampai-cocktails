@@ -2,29 +2,6 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import "../styles/modal.css";
 
-// function getRakutenProduct(ingredient) {
-//   return fetch(
-//     `https://rakuten_webservice-rakuten-marketplace-product-search-v1.p.rapidapi.com/services/api/Product/Search/${ingredient}`,
-//     {
-//       method: "GET",
-//       headers: {
-//         "x-rapidapi-host":
-//           "rakuten_webservice-rakuten-marketplace-product-search-v1.p.rapidapi.com",
-//         "x-rapidapi-key": "8618e17941mshc832839b43572f9p1a882bjsn30e7e367eddd",
-//       },
-//     }
-//   )
-//     .then((response) => {
-//       return response.json();
-//     })
-//     .then((product) => {
-//       console.log(product);
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//     });
-// }
-
 function checkIngredients(fullDrinkInfo) {
   let measureIngredientPairs = {};
 
@@ -47,17 +24,47 @@ function checkIngredients(fullDrinkInfo) {
           >
             {measureIngredientPairs[key]}
           </a>
-          {/* {getRakutenProduct(measureIngredientPairs[key])} */}
         </p>
       ))}
     </div>
   );
 }
 
+function fetchYoutubeLink(drink) {
+  return fetch(
+    `https://youtube-search1.p.rapidapi.com/how%2520to%2520make%2520${drink}%2520drink`,
+    {
+      method: "GET",
+      headers: {
+        "x-rapidapi-host": "youtube-search1.p.rapidapi.com",
+        "x-rapidapi-key": "8618e17941mshc832839b43572f9p1a882bjsn30e7e367eddd",
+      },
+    }
+  )
+    .then((response) => {
+      return response.json();
+    })
+    .then((youTubeInfo) => {
+      return youTubeInfo;
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}
+
 function DrinkModal(props) {
+  const [youtubeLink, setYoutubeLink] = useState("");
+
   return (
     <div className="modal">
-      <div className="modal-content">
+      <div
+        className="modal-content"
+        onMouseEnter={async () => {
+          let youtubeObj = await fetchYoutubeLink(props.fullDrinkInfo.strDrink);
+          // console.log(youtubeObj);
+          setYoutubeLink(youtubeObj.items[0].url);
+        }}
+      >
         {/* <h3>IM A SEXY MODAL</h3> */}
         <img
           className="modalImage"
@@ -82,8 +89,16 @@ function DrinkModal(props) {
         <p className="instructions">
           Instructions: {props.fullDrinkInfo.strInstructions}
         </p>
+        <p>
+          Click{" "}
+          <a href={youtubeLink} target="_blank">
+            here
+          </a>{" "}
+          to watch a tutorial video on making the drink!
+        </p>
         <button
           type="button"
+          className="button"
           onClick={() => {
             console.log("typeof setshowmodal", typeof setShowModal);
             props.setShowModal(false);

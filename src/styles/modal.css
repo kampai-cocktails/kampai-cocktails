@@ -21,27 +21,44 @@
   font-size: 20px;
   color: #143642;
   border-radius: 40px 10px;
+  font-family: "Yatra One";
 }
 .modalImage {
   max-width: 100%;
   height: auto;
+  border-radius: 40px 10px;
 }
 .drinkName {
+  font-size: 50px;
   background: #b76935;
   padding: 2px;
 }
+.alcoholContent {
+  text-align: left;
+}
 .glassType {
+  text-align: left;
   background: #b76935;
   padding: 2px;
+}
+.drinkCategory {
+  text-align: left;
 }
 .ingredientListContainer {
   background: #b76935;
   padding: 2px;
+  text-align: left;
 }
 .ingredientList {
   background: #b76935;
   padding: 2px;
   list-style: none;
+}
+.instructions {
+  text-align: left;
+}
+.button {
+  font-family: "Yatra One";
 }
 
 /*

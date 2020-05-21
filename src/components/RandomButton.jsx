@@ -1,5 +1,4 @@
 import React from "react";
-import DrinksDisplay from "./DrinksDisplay.jsx";
 
 export default function RandomButton(props) {
   // random drink API
@@ -25,6 +24,7 @@ export default function RandomButton(props) {
   return (
     <div className="randomContainer">
       <button
+        className="buttons"
         type="button"
         onClick={async () => {
           // do something in here that calls the random drink API
