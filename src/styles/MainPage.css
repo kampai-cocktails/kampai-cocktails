@@ -7,7 +7,7 @@
   padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
-  font-family: "Yatra One";
+  font-family: "Antic";
 }
 
 .allButtons {
@@ -15,10 +15,41 @@
   padding: 25px;
   border-radius: 40px 10px;
 }
-.buttons {
-  font-family: "Yatra One";
+/* .buttons {
+  font-family: "Antic";
   border-radius: 10px 10px;
   padding: 10px;
+} */
+
+.buttons {
+  font-family: "Antic";
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #f4dbd8;
+  width: 80px;
+  height: 40px;
+  line-height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  font-weight: bold;
+  background-image: -webkit-linear-gradient(#b76935 0%, #2f1000 100%);
+  background-image: linear-gradient(#b76935 0%, #2f1000 100%);
+  text-shadow: 1px 1px 1px #2f1000;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+}
+
+.buttons:active {
+  -ms-transform: translateY(2px);
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  background-image: -webkit-linear-gradient(#b76935 0%, #2f1000 100%);
+  background-image: linear-gradient(#b76935 0%, #2f1000 100%);
 }
 
 /*

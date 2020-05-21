@@ -46,11 +46,7 @@ export default function MainPage() {
         youtubeLink={youtubeLink}
         setYoutubeLink={setYoutubeLink}
       />
-      <div
-      // onClick={() => {
-      //   setShowModal(true)
-      // }}
-      >
+      <div>
         {showModal ? (
           <DrinkModalPortal
             showModal={showModal}
