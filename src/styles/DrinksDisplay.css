@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   padding-top: 50px;
-  font-family: "Yatra One";
+  font-family: "Antic";
 }
 
 .drinkImg {
@@ -11,13 +11,35 @@
 }
 
 /*
- The parent container 
-main {
+.button {
+  font-family: "Antic";
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #f4dbd8;
+  width: 80px;
+  height: 40px;
+  line-height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  font-weight: bold;
+  background-image: -webkit-linear-gradient(#b76935 0%, #2f1000 100%);
+  background-image: linear-gradient(#b76935 0%, #2f1000 100%);
+  text-shadow: 1px 1px 1px #2f1000;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
 }
 
-img {
+.button:active {
+  -ms-transform: translateY(2px);
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  background-image: -webkit-linear-gradient(#b76935 0%, #2f1000 100%);
+  background-image: linear-gradient(#b76935 0%, #2f1000 100%);
 }
-If the images do not have a uniform width and height, 
-replace max-width with object-fit and set the value to cover.
 
 */

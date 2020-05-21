@@ -17,7 +17,7 @@ function checkIngredients(fullDrinkInfo) {
       Ingredients
       {Object.keys(measureIngredientPairs).map((key) => (
         <p className="individualIngredient" value={key}>
-          {key} -
+          {key} -{" "}
           <a
             href={`https://search.rakuten.co.jp/search/mall/${measureIngredientPairs[key]}`}
             target="_blank"
