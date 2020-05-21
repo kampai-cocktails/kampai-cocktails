@@ -2,26 +2,54 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import "../styles/modal.css";
 
-function checkIngredients(fullDrinkInfo) {
-  let newArray = [];
+// function getRakutenProduct(ingredient) {
+//   return fetch(
+//     `https://rakuten_webservice-rakuten-marketplace-product-search-v1.p.rapidapi.com/services/api/Product/Search/${ingredient}`,
+//     {
+//       method: "GET",
+//       headers: {
+//         "x-rapidapi-host":
+//           "rakuten_webservice-rakuten-marketplace-product-search-v1.p.rapidapi.com",
+//         "x-rapidapi-key": "8618e17941mshc832839b43572f9p1a882bjsn30e7e367eddd",
+//       },
+//     }
+//   )
+//     .then((response) => {
+//       return response.json();
+//     })
+//     .then((product) => {
+//       console.log(product);
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//     });
+// }
 
-  for (let key in fullDrinkInfo) {
-    if (fullDrinkInfo[key] !== null && key.startsWith("strIngredient")) {
-      newArray.push(fullDrinkInfo[key]);
+function checkIngredients(fullDrinkInfo) {
+  let measureIngredientPairs = {};
+
+  for (let i = 1; i <= 15; i++) {
+    if (fullDrinkInfo[`strIngredient${i}`] !== null) {
+      measureIngredientPairs[fullDrinkInfo[`strMeasure${i}`]] =
+        fullDrinkInfo[`strIngredient${i}`];
     }
   }
 
-  console.log(newArray);
-
-  // return newArray;
   return (
     <div className="ingredientListContainer">
       Ingredients
-      <ul className="ingredientList">
-        {newArray.map((ingredient, index) => (
-          <li key={index}>{ingredient}</li>
-        ))}
-      </ul>
+      {Object.keys(measureIngredientPairs).map((key) => (
+        <p className="individualIngredient" value={key}>
+          {key} -
+          <a
+            href={`https://search.rakuten.co.jp/search/mall/${measureIngredientPairs[key]}`}
+            target="_blank"
+          >
+            {measureIngredientPairs[key]}
+          </a>
+          {/* {getRakutenProduct(measureIngredientPairs[key])} */}
+        </p>
+      ))}
     </div>
   );
 }

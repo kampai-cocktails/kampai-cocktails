@@ -30,7 +30,6 @@ export default function DrinksDisplay(props) {
   if (typeof props.drinkResults === "object") {
     return (
       <div className="imgContainer">
-        I'm a div from DrinksDisplay
         {props.drinkResults.map((obj, index) => (
           <div key={index}>
             <img
@@ -42,7 +41,7 @@ export default function DrinksDisplay(props) {
                 props.setDrinkId(obj.idDrink);
                 // console.log("obj.idDrink from drinksdisplay", obj.idDrink);
                 let cocktailInfo = await getFullCocktailInfo(obj.idDrink);
-               // console.log(cocktailInfo.drinks[0], "<---- cocktailInfo.drinks[0]");
+                // console.log(cocktailInfo.drinks[0], "<---- cocktailInfo.drinks[0]");
                 props.setFullDrinkInfo(cocktailInfo.drinks[0]);
                 props.setShowModal(true);
               }}
@@ -53,5 +52,5 @@ export default function DrinksDisplay(props) {
       </div>
     );
   }
-  return <div>no drinks displayed</div>;
+  return <div>Search by ingredient....or get a random one!</div>;
 }
