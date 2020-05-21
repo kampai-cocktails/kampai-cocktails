@@ -24,7 +24,7 @@ yarn install
 
 - [React](https://reactjs.org/)
 - [Rakuten Rapid API](https://english.api.rakuten.net/)
-- [Heroku](https://www.heroku.com/)
+- [Firebase](https://firebase.google.com/)
 
 ## Contributing
 

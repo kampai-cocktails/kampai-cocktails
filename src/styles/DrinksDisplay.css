@@ -1,0 +1,23 @@
+.imgContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  padding-top: 50px;
+  font-family: "Yatra One";
+}
+
+.drinkImg {
+  max-width: 90%;
+  border-radius: 40px 10px;
+}
+
+/*
+ The parent container 
+main {
+}
+
+img {
+}
+If the images do not have a uniform width and height, 
+replace max-width with object-fit and set the value to cover.
+
+*/

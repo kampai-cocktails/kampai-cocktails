@@ -35,6 +35,7 @@ export default function SearchByIngredient(props) {
       <form>
         <input
           type="text"
+          className="buttons"
           placeholder="type an ingredient"
           onChange={(e) => {
             props.setIngredient(e.target.value);
@@ -43,13 +44,12 @@ export default function SearchByIngredient(props) {
         ></input>
         <button
           type="submit"
+          className="buttons"
           onClick={async (e) => {
-            // send ingredient string to API function call
             e.preventDefault();
+            // send ingredient string to API function call
             let drinksObj = await searchByIngredient(props.ingredient);
             props.setDrinkResults(drinksObj.drinks);
-            // console.log("this is drinkResults:", drinksObj);
-            // console.log(drinkArray, "<---- drinkArray");
           }}
         >
           Search for A Drink
