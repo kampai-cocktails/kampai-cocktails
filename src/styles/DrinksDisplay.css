@@ -8,6 +8,11 @@
 .drinkImg {
   max-width: 90%;
   border-radius: 40px 10px;
+  cursor: pointer;
+}
+
+.drinkNameClickable {
+  cursor: pointer;
 }
 
 .noDrinks {

@@ -44,6 +44,7 @@ export default function DrinksDisplay(props) {
               }}
             ></img>
             <p
+              className={"drinkNameClickable"}
               onClick={async () => {
                 // do something here to display the modal
                 props.setDrinkId(obj.idDrink);
