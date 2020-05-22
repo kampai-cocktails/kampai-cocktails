@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Clock.css";
 import ReactAnime from "react-animejs";
-const { Anime, stagger } = ReactAnime;
+const { Anime } = ReactAnime;
 
 export default function () {
   return (

@@ -1,11 +1,6 @@
-import React, { useState } from "react";
-import DrinksDisplay from "./DrinksDisplay.jsx";
+import React from "react";
 
 export default function SearchByIngredient(props) {
-  //const [drinkResults, setDrinkResults] = useState("");
-
-  // console.log("drinkResults outside onClick", drinkResults);
-
   // drinks by ingredient API
   function searchByIngredient(ingredient) {
     return fetch(

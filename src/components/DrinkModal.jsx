@@ -81,11 +81,9 @@ function DrinkModal(props) {
         className="modal-content"
         onMouseEnter={async () => {
           let youtubeObj = await fetchYoutubeLink(props.fullDrinkInfo.strDrink);
-          // console.log(youtubeObj);
           setYoutubeLink(youtubeObj.items[0].url);
         }}
       >
-        {/* <h3>IM A SEXY MODAL</h3> */}
         <img
           className="modalImage"
           src={props.fullDrinkInfo.strDrinkThumb}

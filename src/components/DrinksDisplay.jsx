@@ -1,32 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/DrinksDisplay.css";
 
 export default function DrinksDisplay(props) {
   console.log(typeof props.drinkResults);
-  //const drinksArray = props.drinkResults.drinks;
-
-  // function fetchYoutubeLink(drink) {
-  //   return fetch(
-  //     `https://youtube-search1.p.rapidapi.com/how%2520to%2520make%2520${drink}%2520drink`,
-  //     {
-  //       method: "GET",
-  //       headers: {
-  //         "x-rapidapi-host": "youtube-search1.p.rapidapi.com",
-  //         "x-rapidapi-key":
-  //           "8618e17941mshc832839b43572f9p1a882bjsn30e7e367eddd",
-  //       },
-  //     }
-  //   )
-  //     .then((response) => {
-  //       return response.json();
-  //     })
-  //     .then((youTubeInfo) => {
-  //       return youTubeInfo;
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // }
 
   function getFullCocktailInfo(idNum) {
     return fetch(
@@ -61,36 +37,18 @@ export default function DrinksDisplay(props) {
               src={obj.strDrinkThumb}
               onClick={async () => {
                 // do something here to display the modal
-                // console.log("this is the drink obj FIND DRINK ID KEY NAME", obj);
                 props.setDrinkId(obj.idDrink);
-                // console.log("obj.idDrink from drinksdisplay", obj.idDrink);
                 let cocktailInfo = await getFullCocktailInfo(obj.idDrink);
-                // console.log(cocktailInfo.drinks[0], "<---- cocktailInfo.drinks[0]");
                 props.setFullDrinkInfo(cocktailInfo.drinks[0]);
-
-                // let youtubeObj = await fetchYoutubeLink(
-                //   props.fullDrinkInfo.strDrink
-                // );
-                // set state
-                // props.setYoutubeLink(youtubeObj.items[0].url);
                 props.setShowModal(true);
               }}
             ></img>
             <p
               onClick={async () => {
                 // do something here to display the modal
-                // console.log("this is the drink obj FIND DRINK ID KEY NAME", obj);
                 props.setDrinkId(obj.idDrink);
-                // console.log("obj.idDrink from drinksdisplay", obj.idDrink);
                 let cocktailInfo = await getFullCocktailInfo(obj.idDrink);
-                // console.log(cocktailInfo.drinks[0], "<---- cocktailInfo.drinks[0]");
                 props.setFullDrinkInfo(cocktailInfo.drinks[0]);
-
-                // let youtubeObj = await fetchYoutubeLink(
-                //   props.fullDrinkInfo.strDrink
-                // );
-                // set state
-                // props.setYoutubeLink(youtubeObj.items[0].url);
                 props.setShowModal(true);
               }}
             >

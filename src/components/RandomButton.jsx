@@ -27,8 +27,6 @@ export default function RandomButton(props) {
         className="buttons"
         type="button"
         onClick={async () => {
-          // do something in here that calls the random drink API
-          // then displays 6 random drinks
           let randomDrink = await getRandomDrink();
           console.log(randomDrink);
           props.setDrinkResults(randomDrink.drinks);
