@@ -60,7 +60,7 @@ export default function DrinksDisplay(props) {
     );
   } else if (props.searchError) {
     return (
-      <div className="searchError">Drinks with that ingredient couldn't be found.</div>
+      <div className="noDrinks">Drinks with that ingredient couldn't be found.</div>
     )
   }
   return (
