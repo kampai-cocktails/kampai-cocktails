@@ -28,13 +28,13 @@
 }
 
 .min-hand {
-  width: 55%;
+  width: 50%;
   height: 2px;
   background: black;
   position: absolute;
   top: 50%;
   transform-origin: 100%;
-  transform: rotate(160deg);
+  transform: rotate(95deg);
 }
 
 .sec-hand {
