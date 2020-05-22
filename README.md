@@ -4,7 +4,13 @@
 
 On a cold, lonely night, you want to curl up on the sofa and relax with a nice drink...but what should you drink? This app helps you answer that burning question that we all have. You can choose a random drink or search for drinks made with a specific ingredient you may have! Please enjoy, but drink responsibly!
 
-![Kampai Cocktails](./Splash.png)
+### Here's a preview of the intro screen:
+
+![Kampai Cocktails1](./kampai1.png)
+
+### This is preview of result screen:
+
+![Kampai Cocktails1](./kampai2.png)
 
 ## Installation
 
