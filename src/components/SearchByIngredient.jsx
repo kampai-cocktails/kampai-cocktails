@@ -46,10 +46,13 @@ export default function SearchByIngredient(props) {
             let drinksObj = await searchByIngredient(props.ingredient);
             if (drinksObj) {
               props.setDrinkResults(drinksObj.drinks);
+              props.setSearchError(false)
+            } else if (!drinksObj){
+              props.setSearchError(true)
             }
           }}
         >
-          Search for A Drink
+          Search
         </button>
       </form>
     </div>

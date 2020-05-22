@@ -27,7 +27,7 @@ export default function DrinksDisplay(props) {
       });
   }
 
-  if (typeof props.drinkResults === "object") {
+  if (typeof props.drinkResults === "object" && (!props.searchError)) {
     return (
       <div className={"imgContainer"}>
         {props.drinkResults.map((obj, index) => (
@@ -58,6 +58,10 @@ export default function DrinksDisplay(props) {
         ))}
       </div>
     );
+  } else if (props.searchError) {
+    return (
+      <div className="searchError">Drinks with that ingredient couldn't be found.</div>
+    )
   }
   return (
     <div className="noDrinks">Search by ingredient....or get a random one!</div>
