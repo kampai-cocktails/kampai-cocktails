@@ -12,6 +12,7 @@ export default function MainPage() {
   const [drinkId, setDrinkId] = useState("");
   const [fullDrinkInfo, setFullDrinkInfo] = useState("");
   const [youtubeLink, setYoutubeLink] = useState("");
+  const [searchError, setSearchError] = useState(false)
 
   return (
     <div className="MainPage">
@@ -27,6 +28,7 @@ export default function MainPage() {
           ingredient={ingredient}
           drinkResults={drinkResults}
           setDrinkResults={setDrinkResults}
+          setSearchError={setSearchError}
         />
       </div>
       <DrinksDisplay
@@ -39,6 +41,7 @@ export default function MainPage() {
         setFullDrinkInfo={setFullDrinkInfo}
         youtubeLink={youtubeLink}
         setYoutubeLink={setYoutubeLink}
+        searchError={searchError}
       />
       <div>
         {showModal ? (
