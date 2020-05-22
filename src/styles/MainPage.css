@@ -8,12 +8,18 @@
   padding-left: 10px;
   padding-right: 10px;
   font-family: "Antic";
+  box-shadow: 4px 4px 6px 0px #143642;
+  -webkit-box-shadow: 4px 4px 6px 0px #143642;
+  -moz-box-shadow: 4px 4px 6px 0px #143642;
 }
 
 .allButtons {
   background: #621b00;
   padding: 25px;
   border-radius: 40px 10px;
+  box-shadow: 4px 4px 6px 0px #143642;
+  -webkit-box-shadow: 4px 4px 6px 0px #143642;
+  -moz-box-shadow: 4px 4px 6px 0px #143642;
 }
 /* .buttons {
   font-family: "Antic";
@@ -21,6 +27,9 @@
   padding: 10px;
 } */
 
+.input {
+  border-radius: 5px;
+}
 .buttons {
   font-family: "Antic";
   display: inline-block;
