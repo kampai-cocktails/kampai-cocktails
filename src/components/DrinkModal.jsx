@@ -15,17 +15,37 @@ function checkIngredients(fullDrinkInfo) {
   return (
     <div className="ingredientListContainer">
       Ingredients
-      {Object.keys(measureIngredientPairs).map((key) => (
-        <p className="individualIngredient" value={key}>
-          {key} -{" "}
-          <a
-            href={`https://search.rakuten.co.jp/search/mall/${measureIngredientPairs[key]}`}
-            target="_blank"
-          >
-            {measureIngredientPairs[key]}
-          </a>
-        </p>
-      ))}
+      {Object.keys(measureIngredientPairs).map((key) => {
+        if (key === "null") {
+          return (
+            <>
+              <p className="individualIngredient" value={key}>
+                {"To taste"} -{" "}
+                <a
+                  href={`https://search.rakuten.co.jp/search/mall/${measureIngredientPairs[key]}`}
+                  target="_blank"
+                >
+                  {measureIngredientPairs[key]}
+                </a>
+              </p>
+            </>
+          );
+        } else {
+          return (
+            <>
+              <p className="individualIngredient" value={key}>
+                {key} -{" "}
+                <a
+                  href={`https://search.rakuten.co.jp/search/mall/${measureIngredientPairs[key]}`}
+                  target="_blank"
+                >
+                  {measureIngredientPairs[key]}
+                </a>
+              </p>
+            </>
+          );
+        }
+      })}
     </div>
   );
 }
@@ -73,7 +93,7 @@ function DrinkModal(props) {
         <div className="drinkName">{props.fullDrinkInfo.strDrink}</div>
         <hr></hr>
         <p className="alcoholContent">
-          Is there alcohol? {props.fullDrinkInfo.strAlcoholic}
+          Alcoholic or non-alcoholic? {props.fullDrinkInfo.strAlcoholic}
         </p>
         <p className="glassType">
           Type of glass? {props.fullDrinkInfo.strGlass}
