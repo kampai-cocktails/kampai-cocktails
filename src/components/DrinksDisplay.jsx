@@ -101,5 +101,7 @@ export default function DrinksDisplay(props) {
       </div>
     );
   }
-  return <div>Search by ingredient....or get a random one!</div>;
+  return (
+    <div className="noDrinks">Search by ingredient....or get a random one!</div>
+  );
 }
