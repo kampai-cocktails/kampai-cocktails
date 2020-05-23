@@ -7,11 +7,14 @@ On a cold, lonely night, you want to curl up on the sofa and relax with a nice d
 Please drink responsibly at:
 [Kampai Cocktails](https://https://kampai-cocktails.web.app/)
 
+Checkout out our presentation at:
+[YouTube video](https://youtu.be/Qu_bTj7-abY?t=3118)
+
 ### Here's a preview of the intro screen:
 
 ![Kampai Cocktails1](./kampai1.png)
 
-### This is preview of result screen:
+### This is a preview of the result screen:
 
 ![Kampai Cocktails1](./kampai2.png)
 
