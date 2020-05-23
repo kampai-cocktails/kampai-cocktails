@@ -8,7 +8,7 @@ Please drink responsibly at:
 [Kampai Cocktails](https://https://kampai-cocktails.web.app/)
 
 Checkout out our presentation at:
-[YouTube video](https://youtu.be/Qu_bTj7-abY?t=3118)
+[CC12 Online API Night with Rakuten RapidAPI](https://youtu.be/Qu_bTj7-abY?t=3118)
 
 ### Here's a preview of the intro screen:
 
