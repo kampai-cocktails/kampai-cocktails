@@ -8,11 +8,11 @@
 .drinkImg {
   max-width: 90%;
   border-radius: 40px 10px;
-  cursor: pointer;
+  cursor: url('https://i.ibb.co/SNTqVR1/testcursor.png'), auto;
 }
 
 .drinkNameClickable {
-  cursor: pointer;
+  cursor: url('https://i.ibb.co/SNTqVR1/testcursor.png'), auto;
 }
 
 .noDrinks {
