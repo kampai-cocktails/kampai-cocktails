@@ -5,7 +5,7 @@
 On a cold, lonely night, you want to curl up on the sofa and relax with a nice drink...but what should you drink? This app helps you answer that burning question that we all have. You can choose a random drink or search for drinks made with a specific ingredient you may have! Please enjoy, but drink responsibly!
 
 Please drink responsibly at:
-[Kampai Cocktails](https://https://kampai-cocktails.web.app/)
+[Kampai Cocktails](https://kampai-cocktails.web.app/)
 
 Checkout out our presentation at:
 [CC12 Online API Night with Rakuten RapidAPI](https://youtu.be/Qu_bTj7-abY?t=3118)
