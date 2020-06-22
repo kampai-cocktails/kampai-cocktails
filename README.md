@@ -52,4 +52,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 - [Halee Pagel](https://github.com/haleepagel)
 - [Jeff Bentley](https://github.com/jbentleyjp)
 - [Tam Nguyen](https://github.com/softwaredeveloptam)
-- [Garrett Chun](https://github.com/Kapakahi)
+- [Garrett Chun](https://github.com/KapakahiCoder)
