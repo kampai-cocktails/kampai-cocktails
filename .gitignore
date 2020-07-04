@@ -11,7 +11,7 @@ backendNotes.txt
 /coverage
 
 # production
-# /build
+/build
 
 # misc
 .DS_Store
@@ -19,6 +19,7 @@ backendNotes.txt
 .env.development.local
 .env.test.local
 .env.production.local
+.env
 
 npm-debug.log*
 yarn-debug.log*
