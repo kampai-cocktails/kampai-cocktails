@@ -13,13 +13,13 @@
 
 .modal-content {
   text-align: center;
-  background-color: #f4dbd8;
+  background-color: #fae1df;
   margin: 15% auto;
   padding: 20px;
-  border: 2px solid #383d3b;
+  border: 3px solid #28502e;
   width: 50%;
   font-size: 20px;
-  color: #143642;
+  color: #062f4f;
   border-radius: 40px 10px;
   font-family: "Antic";
 }
@@ -27,14 +27,14 @@
   max-width: 100%;
   height: auto;
   border-radius: 40px 10px;
-  box-shadow: 4px 4px 6px 0px #143642;
-  -webkit-box-shadow: 4px 4px 6px 0px #143642;
-  -moz-box-shadow: 4px 4px 6px 0px #143642;
+  box-shadow: 4px 4px 6px 0px #062f4f;
+  -webkit-box-shadow: 4px 4px 6px 0px #062f4f;
+  -moz-box-shadow: 4px 4px 6px 0px #062f4f;
   margin-bottom: 5px;
 }
 .drinkName {
   font-size: 50px;
-  background: #b76935;
+  background: #c69f89;
   padding: 2px;
 }
 .alcoholContent {
@@ -42,19 +42,19 @@
 }
 .glassType {
   text-align: left;
-  background: #b76935;
+  background: #c69f89;
   padding: 2px;
 }
 .drinkCategory {
   text-align: left;
 }
 .ingredientListContainer {
-  background: #b76935;
+  background: #c69f89;
   padding: 2px;
   text-align: left;
 }
 .ingredientList {
-  background: #b76935;
+  background: #c69f89;
   padding: 2px;
   list-style: none;
 }
@@ -65,7 +65,7 @@
   font-family: "Antic";
 } */
 .input {
-  background: #f4dbd8;
+  background: #fae1df;
   padding: 10px;
   margin-right: 5px;
   margin-top: 5px;
@@ -77,7 +77,7 @@
   font-size: 20px;
   text-align: center;
   text-decoration: none;
-  color: #f4dbd8;
+  color: #fae1df;
   width: 80px;
   height: 40px;
   line-height: 30px;
@@ -86,9 +86,9 @@
   vertical-align: middle;
   overflow: hidden;
   font-weight: bold;
-  background-image: -webkit-linear-gradient(#b76935 0%, #2f1000 100%);
-  background-image: linear-gradient(#b76935 0%, #2f1000 100%);
-  text-shadow: 1px 1px 1px #2f1000;
+  background-image: -webkit-linear-gradient(#c69f89 0%, #37000a 100%);
+  background-image: linear-gradient(#c69f89 0%, #37000a 100%);
+  text-shadow: 1px 1px 1px #37000a;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
   cursor: pointer;
 }
@@ -98,25 +98,32 @@
   -webkit-transform: translateY(2px);
   transform: translateY(2px);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
-  background-image: -webkit-linear-gradient(#b76935 0%, #2f1000 100%);
-  background-image: linear-gradient(#b76935 0%, #2f1000 100%);
+  background-image: -webkit-linear-gradient(#b82601 0%, #37000a 100%);
+  background-image: linear-gradient(#b82601 0%, #37000a 100%);
 }
+/*
+CURRENT COLOR PALETTE:
+-------------
+INTERNATIONAL ORANGE ENGINEER (RED) #B82601
+PRUSSIAN BLUE #062F4F
+HUNTER GREEN #28502E
+MISTY ROSE #FAE1DF
+DARK SIENNA #37000A
+ORCHID (PINK) #DC6ACF
+BLACK #000000
+CAPUT MORTUUM (DARK BROWN) #5F2B28
+ANTIQUE BRASS (LIGHT BROWN) #C69F89
+*/
 
 /*
-COLOR PALETTE
-
+ORIGINAL (and now retired) COLOR PALETTE:
+-------------
 BLACK BEAN (DARK BROWN) #2F1000
-
 MISTY ROSE (WHITE) #F4DBD8
-
 LIVER (DOGS) (ORANGE) #B76935
-
 ONYX (GRAY) #383D3B
-
 COFFEE (LIGHT BROWN) #6F23B
-
 SEAL BROWN (RUST RED) #621B00
-
 GUNMETAL (BLUE) #143642
-
+BORB (BORB) #BBBBBB
 */

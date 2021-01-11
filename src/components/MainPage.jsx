@@ -12,7 +12,7 @@ export default function MainPage() {
   const [drinkId, setDrinkId] = useState("");
   const [fullDrinkInfo, setFullDrinkInfo] = useState("");
   const [youtubeLink, setYoutubeLink] = useState("");
-  const [searchError, setSearchError] = useState(false)
+  const [searchError, setSearchError] = useState(false);
 
   return (
     <div className="MainPage">
@@ -21,6 +21,8 @@ export default function MainPage() {
           className="randomButton"
           drinkResults={drinkResults}
           setDrinkResults={setDrinkResults}
+          setIngredient={setIngredient}
+          ingredient={ingredient}
         />
         <SearchByIngredient
           className="searchByIngredient"

@@ -28,8 +28,9 @@ export default function RandomButton(props) {
         type="button"
         onClick={async () => {
           let randomDrink = await getRandomDrink();
-          console.log(randomDrink);
+          // console.log(randomDrink);
           props.setDrinkResults(randomDrink.drinks);
+          props.setIngredient("");
         }}
       >
         Random Drink!

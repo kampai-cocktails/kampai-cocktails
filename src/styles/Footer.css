@@ -7,32 +7,42 @@
   text-align: center;
   display: inline-block;
   font-family: "Antic";
-  color: #143642;
+  color: #fae1df;
   border-radius: 40px 10px;
-  background: #f4dbd8;
-  box-shadow: 4px 4px 6px 0px #143642;
-  -webkit-box-shadow: 4px 4px 6px 0px #143642;
-  -moz-box-shadow: 4px 4px 6px 0px #143642;
+  background: #28502e;
+  background-image: linear-gradient(to bottom right, #070f08, #28502e);
+  box-shadow: 2px 2px 3px 0px #062f4f;
+  -webkit-box-shadow: 2px 2px 3px 0px #062f4f;
+  -moz-box-shadow: 2px 2px 3px 0px #062f4f;
 }
 .nameLinks {
   cursor: pointer;
 }
 
 /*
-  COLOR PALETTE
-  
-  BLACK BEAN (DARK BROWN) #2F1000
-  
-  MISTY ROSE (WHITE) #F4DBD8
-  
-  LIVER (DOGS) (ORANGE) #B76935
-  
-  ONYX (GRAY) #383D3B
-  
-  COFFEE (LIGHT BROWN) #6F23B
-  
-  SEAL BROWN (RUST RED) #621B00
-  
-  GUNMETAL (BLUE) #143642
-  
-  */
+CURRENT COLOR PALETTE:
+-------------
+INTERNATIONAL ORANGE ENGINEER (RED) #B82601
+PRUSSIAN BLUE #062F4F
+HUNTER GREEN #28502E
+MISTY ROSE #FAE1DF
+DARK SIENNA #37000A
+ORCHID (PINK) #DC6ACF
+BLACK #000000
+CAPUT MORTUUM (LIGHT BROWN) #5F2B28
+ANTIQUE BRASS (LIGHT BROWN) #C69F89
+
+*/
+
+/*
+ORIGINAL (and now retired) COLOR PALETTE:
+-------------
+BLACK BEAN (DARK BROWN) #2F1000
+MISTY ROSE (WHITE) #F4DBD8
+LIVER (DOGS) (ORANGE) #B76935
+ONYX (GRAY) #383D3B
+COFFEE (LIGHT BROWN) #6F23B
+SEAL BROWN (RUST RED) #621B00
+GUNMETAL (BLUE) #143642
+BORB (BORB) #BBBBBB
+*/

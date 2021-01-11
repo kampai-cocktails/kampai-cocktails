@@ -6,8 +6,9 @@
   margin: 1px auto;
   position: relative;
   padding: 2rem;
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #621b00,
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #37000a,
     inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 .clock-face {
@@ -48,20 +49,29 @@
 }
 
 /*
-COLOR PALETTE
+CURRENT COLOR PALETTE:
+-------------
+INTERNATIONAL ORANGE ENGINEER (RED) #B82601
+PRUSSIAN BLUE #062F4F
+HUNTER GREEN #28502E
+MISTY ROSE #FAE1DF
+DARK SIENNA #37000A
+ORCHID (PINK) #DC6ACF
+BLACK #000000
+CAPUT MORTUUM (LIGHT BROWN) #5F2B28
+ANTIQUE BRASS (LIGHT BROWN) #C69F89
 
+*/
+
+/*
+ORIGINAL (and now retired) COLOR PALETTE:
+-------------
 BLACK BEAN (DARK BROWN) #2F1000
-
 MISTY ROSE (WHITE) #F4DBD8
-
 LIVER (DOGS) (ORANGE) #B76935
-
 ONYX (GRAY) #383D3B
-
 COFFEE (LIGHT BROWN) #6F23B
-
 SEAL BROWN (RUST RED) #621B00
-
 GUNMETAL (BLUE) #143642
-
+BORB (BORB) #BBBBBB
 */
