@@ -2,6 +2,8 @@
   border-radius: 40px 10px;
   border: none;
   background: #fae1df;
+  background-image: linear-gradient(to bottom right, #c69f89, #fae1df, #c69f89);
+
   color: #062f4f;
   font-family: "Bungee Shade";
   box-shadow: 4px 4px 6px 0px #062f4f;
