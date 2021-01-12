@@ -11,7 +11,7 @@
   max-width: 90%;
   /* border-radius: 40px 10px; */
   border: 1px solid #28502e;
-  background-image: linear-gradient(to bottom right, #070f08, #28502e);
+  background-image: linear-gradient(to bottom right, #070f08, #28502e, #070f08);
   box-shadow: 4px 4px 6px 0px #fae1df;
   -webkit-box-shadow: 4px 4px 6px 0px #fae1df;
   -moz-box-shadow: 4px 4px 6px 0px #fae1df;

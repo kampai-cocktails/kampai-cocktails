@@ -10,7 +10,13 @@
   color: #fae1df;
   border-radius: 40px 10px;
   background: #28502e;
-  background-image: linear-gradient(to bottom right, #070f08, #28502e);
+  background-image: linear-gradient(
+    to bottom right,
+    #070f08,
+    #28502e,
+    #28502e,
+    #070f08
+  );
   box-shadow: 2px 2px 3px 0px #dc6acf;
   -webkit-box-shadow: 2px 2px 3px 0px #dc6acf;
   -moz-box-shadow: 2px 2px 3px 0px #dc6acf;
