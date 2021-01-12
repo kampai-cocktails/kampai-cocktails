@@ -1,16 +1,16 @@
 .MainPage {
   border-radius: 40px 10px;
   border: none;
-  background: #fae1df;
+  background: #37000a;
   color: #062f4f;
   padding-top: 10px;
   padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
   font-family: "Antic";
-  box-shadow: 4px 4px 6px 0px #062f4f;
+  /* box-shadow: 4px 4px 6px 0px #062f4f;
   -webkit-box-shadow: 4px 4px 6px 0px #062f4f;
-  -moz-box-shadow: 4px 4px 6px 0px #062f4f;
+  -moz-box-shadow: 4px 4px 6px 0px #062f4f; */
 }
 
 .allButtons {
