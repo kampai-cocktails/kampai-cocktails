@@ -12,9 +12,9 @@
   /* border-radius: 40px 10px; */
   border: 1px solid #28502e;
   background-image: linear-gradient(to bottom right, #070f08, #28502e);
-  box-shadow: 4px 4px 6px 0px #28502e;
-  -webkit-box-shadow: 4px 4px 6px 0px #28502e;
-  -moz-box-shadow: 4px 4px 6px 0px #28502e;
+  box-shadow: 4px 4px 6px 0px #fae1df;
+  -webkit-box-shadow: 4px 4px 6px 0px #fae1df;
+  -moz-box-shadow: 4px 4px 6px 0px #fae1df;
 }
 
 .drinkImg {
@@ -23,9 +23,9 @@
   border: 1px solid #28502e;
 
   cursor: url("https://i.ibb.co/SNTqVR1/testcursor.png"), auto;
-  box-shadow: 4px 4px 6px 0px #062f4f;
-  -webkit-box-shadow: 4px 4px 6px 0px #062f4f;
-  -moz-box-shadow: 4px 4px 6px 0px #062f4f;
+  box-shadow: 4px 4px 6px 0px #fae1df;
+  -webkit-box-shadow: 4px 4px 6px 0px #fae1df;
+  -moz-box-shadow: 4px 4px 6px 0px #fae1df;
 }
 
 .drinkNameClickable {
