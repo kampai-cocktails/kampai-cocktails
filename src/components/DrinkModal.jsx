@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import ReactDOM from "react-dom";
 import "../styles/modal.css";
+import useOutsideClick from "./useOutsideClick";
 
 function checkIngredients(fullDrinkInfo) {
   let measureIngredientPairs = {};
@@ -74,15 +75,20 @@ function fetchYoutubeLink(drink) {
 
 function DrinkModal(props) {
   const [youtubeLink, setYoutubeLink] = useState("");
-
+  const ref = useRef();
+  useOutsideClick(ref, () => {
+    console.log("inside useOutsideClick func");
+    props.setShowModal(false);
+  });
   return (
     <div className="modal">
       <div
         className="modal-content"
-        onMouseEnter={async () => {
-          let youtubeObj = await fetchYoutubeLink(props.fullDrinkInfo.strDrink);
-          setYoutubeLink(youtubeObj.items[0].url);
-        }}
+        ref={ref}
+        // onMouseEnter={async () => {
+        //   let youtubeObj = await fetchYoutubeLink(props.fullDrinkInfo.strDrink);
+        //   setYoutubeLink(youtubeObj.items[0].url);
+        // }}
       >
         <img
           className="modalImage"
@@ -118,7 +124,7 @@ function DrinkModal(props) {
           type="button"
           className="button"
           onClick={() => {
-            console.log("typeof setshowmodal", typeof setShowModal);
+            console.log("typeof setshowmodal:", typeof setShowModal);
             props.setShowModal(false);
           }}
         >
