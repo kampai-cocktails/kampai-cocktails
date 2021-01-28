@@ -3,7 +3,7 @@ const path = require("path");
 const app = express();
 
 // Serve the static files from the React app
-application.use("/public", express.static(path.join(__dirname, "public")));
+app.use("/public", express.static(path.join(__dirname, "public")));
 
 // // Handles any requests that don't match the ones above
 // app.get("*", (req, res) => {

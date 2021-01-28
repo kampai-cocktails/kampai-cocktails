@@ -25,6 +25,7 @@ function checkIngredients(fullDrinkInfo) {
                 <a
                   href={`https://search.rakuten.co.jp/search/mall/${measureIngredientPairs[key]}`}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {measureIngredientPairs[key]}
                 </a>
@@ -39,6 +40,7 @@ function checkIngredients(fullDrinkInfo) {
                 <a
                   href={`https://search.rakuten.co.jp/search/mall/${measureIngredientPairs[key]}`}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {measureIngredientPairs[key]}
                 </a>
@@ -93,6 +95,7 @@ function DrinkModal(props) {
         <img
           className="modalImage"
           src={props.fullDrinkInfo.strDrinkThumb}
+          alt={props.fullDrinkInfo.strDrink}
         ></img>
         <div className="drinkName">{props.fullDrinkInfo.strDrink}</div>
         <hr></hr>
@@ -115,7 +118,7 @@ function DrinkModal(props) {
         </p>
         <p>
           Click{" "}
-          <a href={youtubeLink} target="_blank">
+          <a href={youtubeLink} target="_blank" rel="noopener noreferrer">
             here
           </a>{" "}
           to watch a tutorial video on making the drink!

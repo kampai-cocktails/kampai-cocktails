@@ -7,6 +7,38 @@ html {
 .App {
   text-align: center;
 }
+.scrollToTop {
+  position: fixed;
+  width: 100%;
+  bottom: 20px;
+  height: 20px;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+  color: #dc6acf;
+}
+
+.scrollToTop:hover {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+hr {
+  border-bottom: 2px solid #dc6acf;
+  border-radius: 40px 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*
 CURRENT COLOR PALETTE:
