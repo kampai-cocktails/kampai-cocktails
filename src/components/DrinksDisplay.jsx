@@ -34,6 +34,7 @@ export default function DrinksDisplay(props) {
           <div className={"drinkDisplayContainer"} key={index}>
             <img
               className={"drinkImg"}
+              alt={props.fullDrinkInfo.strDrink}
               src={obj.strDrinkThumb}
               onClick={async () => {
                 // do something here to display the modal
