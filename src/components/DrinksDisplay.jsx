@@ -11,8 +11,7 @@ export default function DrinksDisplay(props) {
         method: "GET",
         headers: {
           "x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
-          "x-rapidapi-key":
-            "8618e17941mshc832839b43572f9p1a882bjsn30e7e367eddd",
+          "x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY,
         },
       }
     )

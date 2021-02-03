@@ -9,8 +9,7 @@ export default function SearchByIngredient(props) {
         method: "GET",
         headers: {
           "x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
-          "x-rapidapi-key":
-            "8618e17941mshc832839b43572f9p1a882bjsn30e7e367eddd",
+          "x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY,
         },
       }
     )
@@ -43,12 +42,13 @@ export default function SearchByIngredient(props) {
           onClick={async (e) => {
             e.preventDefault();
             // send ingredient string to API function call
+            console.log(process.env.REACT_APP_RAPID_API_KEY);
             let drinksObj = await searchByIngredient(props.ingredient);
             if (drinksObj) {
               props.setDrinkResults(drinksObj.drinks);
-              props.setSearchError(false)
-            } else if (!drinksObj){
-              props.setSearchError(true)
+              props.setSearchError(false);
+            } else if (!drinksObj) {
+              props.setSearchError(true);
             }
           }}
         >
