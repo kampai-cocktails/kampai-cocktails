@@ -57,7 +57,7 @@ function fetchYoutubeLink(drink) {
       method: "GET",
       headers: {
         "x-rapidapi-host": "youtube-search1.p.rapidapi.com",
-        "x-rapidapi-key": "8618e17941mshc832839b43572f9p1a882bjsn30e7e367eddd",
+        "x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY,
       },
     }
   )

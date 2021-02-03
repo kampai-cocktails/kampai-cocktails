@@ -11,8 +11,7 @@ export default function DrinksDisplay(props) {
         method: "GET",
         headers: {
           "x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
-          "x-rapidapi-key":
-            "8618e17941mshc832839b43572f9p1a882bjsn30e7e367eddd",
+          "x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY,
         },
       }
     )
@@ -27,7 +26,7 @@ export default function DrinksDisplay(props) {
       });
   }
 
-  if (typeof props.drinkResults === "object" && (!props.searchError)) {
+  if (typeof props.drinkResults === "object" && !props.searchError) {
     return (
       <div className={"imgContainer"}>
         {props.drinkResults.map((obj, index) => (
@@ -61,8 +60,10 @@ export default function DrinksDisplay(props) {
     );
   } else if (props.searchError) {
     return (
-      <div className="noDrinks">Drinks with that ingredient couldn't be found.</div>
-    )
+      <div className="noDrinks">
+        Drinks with that ingredient couldn't be found.
+      </div>
+    );
   }
   return (
     <div className="noDrinks">Search by ingredient....or get a random one!</div>
