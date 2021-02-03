@@ -62,6 +62,7 @@ function fetchYoutubeLink(drink) {
     }
   )
     .then((response) => {
+      console.log(response);
       return response.json();
     })
     .then((youTubeInfo) => {
