@@ -55,17 +55,16 @@ function checkIngredients(fullDrinkInfo) {
 
 function fetchYoutubeLink(drink) {
   return fetch(
-    `https://youtube-search1.p.rapidapi.com/how%2520to%2520make%2520${drink}%2520drink`,
+    `https://youtube-search-results.p.rapidapi.com/youtube-search/?q=how%20to%20make%20${drink}%20drink`,
     {
       method: "GET",
       headers: {
-        "x-rapidapi-host": "youtube-search1.p.rapidapi.com",
-        "x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY,
+        "x-rapidapi-host": "youtube-search-results.p.rapidapi.com",
+        "x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY_ALTERNATE,
       },
     }
   )
     .then((response) => {
-      console.log(response);
       return response.json();
     })
     .then((youTubeInfo) => {
@@ -88,10 +87,10 @@ function DrinkModal(props) {
       <div
         className="modal-content"
         ref={ref}
-        // onMouseEnter={async () => {
-        //   let youtubeObj = await fetchYoutubeLink(props.fullDrinkInfo.strDrink);
-        //   setYoutubeLink(youtubeObj.items[0].url);
-        // }}
+        onMouseEnter={async () => {
+          let youtubeObj = await fetchYoutubeLink(props.fullDrinkInfo.strDrink);
+          setYoutubeLink(youtubeObj.items[1].link);
+        }}
       >
         <img
           className="modalImage"
