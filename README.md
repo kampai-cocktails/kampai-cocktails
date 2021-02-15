@@ -29,9 +29,11 @@ yarn install
 yarn start
 ```
 
-3.  Find a drink
+3. Please rename the ".env-example" file to ".env" and enter your own RapidAPI keys.
 
-4.  Have fun!
+4. Find a drink
+
+5. Have fun!
 
 ## Built With
 
