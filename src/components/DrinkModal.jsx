@@ -8,26 +8,27 @@ function checkIngredients(fullDrinkInfo) {
 
   for (let i = 1; i <= 15; i++) {
     if (fullDrinkInfo[`strIngredient${i}`] !== null) {
-      measureIngredientPairs[fullDrinkInfo[`strMeasure${i}`]] =
-        fullDrinkInfo[`strIngredient${i}`];
+      measureIngredientPairs[fullDrinkInfo[`strIngredient${i}`]] =
+        fullDrinkInfo[`strMeasure${i}`];
     }
+    console.log(measureIngredientPairs, "!!!!!!!!!!");
   }
 
   return (
     <div className="ingredientListContainer">
       Ingredients
       {Object.keys(measureIngredientPairs).map((key) => {
-        if (key === "null") {
+        if (!measureIngredientPairs[key]) {
           return (
             <>
               <p className="individualIngredient" value={key}>
-                {"To taste"} -{" "}
+                {key} -{" "}
                 <a
                   href={`https://search.rakuten.co.jp/search/mall/${measureIngredientPairs[key]}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {measureIngredientPairs[key]}
+                  {"To taste"}
                 </a>
               </p>
             </>
