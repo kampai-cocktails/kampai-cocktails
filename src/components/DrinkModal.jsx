@@ -129,7 +129,6 @@ function DrinkModal(props) {
           type="button"
           className="button"
           onClick={() => {
-            console.log("typeof setshowmodal:", typeof setShowModal);
             props.setShowModal(false);
           }}
         >
