@@ -7,11 +7,13 @@ function checkIngredients(fullDrinkInfo) {
   let measureIngredientPairs = {};
 
   for (let i = 1; i <= 15; i++) {
-    if (fullDrinkInfo[`strIngredient${i}`] !== null) {
+    if (
+      fullDrinkInfo[`strIngredient${i}`] !== null &&
+      fullDrinkInfo[`strIngredient${i}`] !== ""
+    ) {
       measureIngredientPairs[fullDrinkInfo[`strIngredient${i}`]] =
         fullDrinkInfo[`strMeasure${i}`];
     }
-    console.log(measureIngredientPairs, "!!!!!!!!!!");
   }
 
   return (
@@ -22,14 +24,14 @@ function checkIngredients(fullDrinkInfo) {
           return (
             <>
               <p className="individualIngredient" value={key}>
-                {key} -{" "}
                 <a
-                  href={`https://search.rakuten.co.jp/search/mall/${measureIngredientPairs[key]}`}
+                  href={`https://search.rakuten.co.jp/search/mall/${key}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {"To taste"}
-                </a>
+                  {key}
+                </a>{" "}
+                - {"To taste"}
               </p>
             </>
           );
@@ -37,14 +39,14 @@ function checkIngredients(fullDrinkInfo) {
           return (
             <>
               <p className="individualIngredient" value={key}>
-                {key} -{" "}
                 <a
-                  href={`https://search.rakuten.co.jp/search/mall/${measureIngredientPairs[key]}`}
+                  href={`https://search.rakuten.co.jp/search/mall/${key}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {measureIngredientPairs[key]}
-                </a>
+                  {key}
+                </a>{" "}
+                - {measureIngredientPairs[key]}
               </p>
             </>
           );
@@ -80,7 +82,6 @@ function DrinkModal(props) {
   const [youtubeLink, setYoutubeLink] = useState("");
   const ref = useRef();
   useOutsideClick(ref, () => {
-    console.log("inside useOutsideClick func");
     props.setShowModal(false);
   });
   return (
