@@ -41,8 +41,8 @@ export default function SearchByIngredient(props) {
           className="buttons"
           onClick={async (e) => {
             e.preventDefault();
+            e.target.value = "";
             // send ingredient string to API function call
-            console.log(process.env.REACT_APP_RAPID_API_KEY);
             let drinksObj = await searchByIngredient(props.ingredient);
             if (drinksObj) {
               props.setDrinkResults(drinksObj.drinks);
